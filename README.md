@@ -3,35 +3,10 @@
 #### 介绍
 java利用ffmpeg处理视频
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 码云特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+利用ffmpeg对视频进行处理，（目的是为了将视频文件存到蓝奏云，蓝奏云只支持小于100m的zip等文件）  
+- FFMpegVideoCutUtil: 实现了基本对视频的剪切功能，根据视频长度和大小，将切割后的视频保持在100M以内  
+- ProjectService：综合了FFMpegVideoCutUtil功能，实现了完整的功能  
+1. 扫描文件夹，将小于100m的视频复制到新的文件夹  
+2. 扫描文件夹，将大于100m的视频剪切成小于100m的  
+3. 第2步的操作，有可能最后一个视频还是大于100m，再追加一次剪切操作  
+4. 对所有视频进行修改后缀操作，改为zip
