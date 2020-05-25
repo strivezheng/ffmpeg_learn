@@ -10,6 +10,10 @@ java利用ffmpeg处理视频
 2. 扫描文件夹，将大于100m的视频剪切成小于100m的  
 3. 第2步的操作，有可能最后一个视频还是大于100m，再追加一次剪切操作  
 4. 对所有视频进行修改后缀操作，改为zip
+之前
+![Image text](https://gitee.com/sinstar_889/ffmpeg_learn/raw/master/src/main/resources/img/befor.png)
+之后
+![这里随便写文字](https://gitee.com/sinstar_889/ffmpeg_learn/raw/master/src/main/resources/img/after.png)
 
 #####lanzou网盘直链解析
 - 功能类：LanZouParseService
