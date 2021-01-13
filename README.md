@@ -21,10 +21,12 @@ java利用ffmpeg处理视频（主要是切割）
 
 操作之前的原数据
 ![图片](https://gitee.com/sinstar_889/ffmpeg_learn/raw/master/src/main/resources/img/befor.png)
+https://gitee.com/sinstar_889/ffmpeg_learn/raw/master/src/main/resources/img/befor.png
 
 
 操作之后的数据
 ![图片](https://gitee.com/sinstar_889/ffmpeg_learn/raw/master/src/main/resources/img/after.png)
+https://gitee.com/sinstar_889/ffmpeg_learn/raw/master/src/main/resources/img/after.png
 
 #####lanzou网盘直链解析
 - 功能类：LanZouParseService
