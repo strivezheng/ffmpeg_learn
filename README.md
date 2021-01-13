@@ -2,6 +2,9 @@
 #### 项目背景
 蓝奏网盘是一个免费不限速的网盘，但是上传文件有限制，只能传压缩包zip、exe、apk等文件，而且文件限制100M，一次偶然的机会我发现如果将一段视频文件的后缀改成.zip再上传到蓝奏网盘后，通过获取文件的直链，视频居然可以在线播放，那这样就意味着蓝奏网盘可以用来存放自己的视频了（或者作为视频床）。
 
+比如：
+> https://wwa.lanzous.com/i6zp4te
+
 但是视频文件一般都很大，所以我这里通过ffmpeg，实现了对一个文件夹里的视频进行扫描然后切割处理。使其大小小于100M。再通过其他工具批量上传到网盘。
 
 
@@ -17,11 +20,11 @@ java利用ffmpeg处理视频（主要是切割）
 4. 对所有视频进行修改后缀操作，改为zip
 
 操作之前的原数据
-![Image text](https://gitee.com/sinstar_889/ffmpeg_learn/raw/master/src/main/resources/img/befor.png)
+![图片](https://gitee.com/sinstar_889/ffmpeg_learn/raw/master/src/main/resources/img/befor.png)
 
 
 操作之后的数据
-![这里随便写文字](https://gitee.com/sinstar_889/ffmpeg_learn/raw/master/src/main/resources/img/after.png)
+![图片](https://gitee.com/sinstar_889/ffmpeg_learn/raw/master/src/main/resources/img/after.png)
 
 #####lanzou网盘直链解析
 - 功能类：LanZouParseService
